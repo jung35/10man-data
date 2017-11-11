@@ -6,7 +6,7 @@ json = JSON.parse(File.open(ARGV[0]).read)
 player_list = json["player_list"]
 match_data = json["match_data"]
 
-csvString = "+"
+csvString = ""
 player_list.each{|p| csvString += ",\"#{p["name"]}\""}
 csvString += "\n"
 
